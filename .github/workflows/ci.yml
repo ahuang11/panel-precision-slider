@@ -53,9 +53,7 @@ jobs:
 
   pytest_ui:
     name: ui:${{ matrix.environment }}:${{ matrix.os }}
-    needs: [pre-commit, setup, pixi_lock]
     runs-on: ${{ matrix.os }}
-    if: needs.setup.outputs.code_change == 'true'
     strategy:
       fail-fast: false
       matrix:
