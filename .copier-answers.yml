@@ -1,0 +1,12 @@
+# This file is managed by Copier; DO NOT EDIT OR REMOVE.
+_commit: 9cc1f92
+_src_path: https://github.com/ahuang11/copier-template-python-open-source.git
+add_autobump_workflow: true
+author_email: ahuang@anaconda.com
+author_name: Andrew
+docs_url: https://ahuang11.github.io/panel-precision-slider/
+github_url: https://github.com/ahuang11/panel-precision-slider
+github_user: ahuang11
+minimal_python_version: py310
+project_short_description: Extends Panel with a precision slider.
+project_slug: panel-precision-slider

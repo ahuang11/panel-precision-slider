@@ -1,0 +1,58 @@
+site_name: panel-precision-slider
+site_description: Extends Panel with a precision slider.
+site_author: Andrew
+
+repo_url: https://github.com/ahuang11/panel-precision-slider
+repo_name: ahuang11/panel-precision-slider
+
+theme:
+    name: material
+    logo: 'assets/logo.svg'
+    features:
+        - content.copy.code
+    palette:
+        # Palette toggle for light mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: white
+          accent: blue
+          toggle:
+            icon: material/brightness-7
+            name: Switch to dark mode
+
+        # Palette toggle for dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: black
+          accent: blue
+          toggle:
+            icon: material/brightness-4
+            name: Switch to light mode
+
+markdown_extensions:
+    - toc:
+        permalink: true
+    - pymdownx.highlight:
+        anchor_linenums: true
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - admonition
+
+plugins:
+    - search
+    - mkdocstrings:
+        handlers:
+            python:
+                options:
+                    docstring_style: google
+
+watch:
+    - docs
+
+nav:
+    - Home: index.md
+    - Reference:
+        - panel-precision-slider: reference/panel-precision-slider.md
